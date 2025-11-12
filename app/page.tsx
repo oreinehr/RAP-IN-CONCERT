@@ -12,6 +12,6 @@ export default function Home() {
       <IntroSection />
       <YoutubeSection />
       <Gallery />
-    </main>
+    </main>   
   )
 }

@@ -10,13 +10,15 @@ const galleryImages = [
   { id: 6, src: "/Rectangle 8.png", ratio: "wide" },
   { id: 7, src: "/Rectangle 9.png", ratio: "square" },
   { id: 8, src: "/Rectangle 10.png", ratio: "wide" },
-  { id: 9, src: "/Rectangle 11.png", ratio: "square" },
+  { id: 9, src: "/Rectangle 19.png", ratio: "square" },
   { id: 10, src: "/Rectangle 12.png", ratio: "wide" },
   { id: 11, src: "/Rectangle 13.png", ratio: "square" },
   { id: 12, src: "/Rectangle 14.png", ratio: "wide" },
   { id: 13, src: "/Rectangle 16.png", ratio: "square" },
-  { id: 14, src: "/Rectangle 17.png", ratio: "wide" },
-    { id: 14, src: "/Rectangle 18.png", ratio: "square" },
+  { id: 14, src: "/Rectangle 27.png", ratio: "wide" },
+    { id: 15, src: "/Rectangle 18.png", ratio: "square" },
+      { id: 16, src: "/Rectangle 17.png", ratio: "wide" },
+   
 ]
 
 export default function Gallery() {

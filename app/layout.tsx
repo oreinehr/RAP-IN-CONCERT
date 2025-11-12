@@ -8,9 +8,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "RAP IN CONCERT - Live Music Experience",
-  description: "Experience the energy of RAP IN CONCERT - Live performances featuring the best rappers and musicians",
-  generator: "v0.app",
+  title: "RAP IN CONCERT",
+  description: "",
+  generator: "",
   icons: {
     icon: [
       {
