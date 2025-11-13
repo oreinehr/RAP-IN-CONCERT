@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="relative h-full flex items-center justify-center">
         <div className="text-center">
          <h1
-  className="text-9xl sm:text-9xl font-black text-white drop-shadow-lg tracking-wider mix-blend-lighten opacity-50"
+  className="text-6xl sm:text-9xl font-black text-white drop-shadow-lg tracking-wider mix-blend-lighten opacity-50"
 >
   RAP IN CONCERT
 </h1>
