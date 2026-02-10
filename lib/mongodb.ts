@@ -1,37 +1,25 @@
 import { MongoClient, Db } from "mongodb";
 
 declare global {
-  // evita múltiplas conexões no dev
-  var _mongoClientPromise: Promise<MongoClient> | undefined;
+  var mongoClientPromise: Promise<MongoClient> | undefined;
 }
 
-let db: Db;
+let db: Db | undefined;
 
-const uri = process.env.MONGODB_URI;
-
-let clientPromise: Promise<MongoClient>;
-
-if (process.env.NODE_ENV === "development") {
-  if (!global._mongoClientPromise) {
-    if (!uri) {
-      throw new Error("MONGODB_URI não definida");
-    }
-    const client = new MongoClient(uri);
-    global._mongoClientPromise = client.connect();
-  }
-  clientPromise = global._mongoClientPromise!;
-} else {
-  if (!uri) {
+export async function getDb() {
+  if (!process.env.MONGODB_URI) {
     throw new Error("MONGODB_URI não definida");
   }
-  const client = new MongoClient(uri);
-  clientPromise = client.connect();
-}
 
-export async function getDb(): Promise<Db> {
-  if (!db) {
-    const client = await clientPromise;
-    db = client.db("rapdb");
+  if (!global.mongoClientPromise) {
+    const client = new MongoClient(process.env.MONGODB_URI);
+    global.mongoClientPromise = client.connect();
   }
+
+  if (!db) {
+    const client = await global.mongoClientPromise;
+    db = client.db("rapinconcert"); // mesmo nome da URI
+  }
+
   return db;
 }
