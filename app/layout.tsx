@@ -37,6 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>  
+          <link rel="stylesheet" href="https://use.typekit.net/mki4bjj.css" />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />

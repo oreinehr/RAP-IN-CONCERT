@@ -3,6 +3,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
+h1 {
+  font-family: "thunderhouse-pro", sans-serif;
+  font-weight: 400; /* ou 700 se quiser bold */
+  font-style: normal;
+}
+
 :root {
   --background: #000000;
   --foreground: #ffffff;
@@ -114,6 +120,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+
 
 @layer base {
   * {

@@ -3,6 +3,7 @@ import Hero from "@/components/hero"
 import IntroSection from "@/components/intro-section"
 import YoutubeSection from "@/components/youtube-section"
 import Gallery from "@/components/gallery"
+import Footer from "@/components/footer"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <IntroSection />
       <YoutubeSection />
       <Gallery />
+      <Footer />
     </main>   
   )
 }

@@ -4,12 +4,12 @@ import { useState } from "react"
 import Footer from "@/components/footer"
 
 const galleryImages = [
-  { id: 1, src: "/lzk/1.png" },
-  { id: 2, src: "/lzk/2.jpeg" },
-  { id: 4, src: "/lzk/3.jpeg" },
-  { id: 3, src: "/Rectangle 6.png" },
-  { id: 5, src: "/Rectangle 19.png" },
-  { id: 6, src: "/lz6.png" },
+
+  { id: 2, src: "/abu/abu2.png" },
+  { id: 3, src: "/abu/abu3.png" },
+  { id: 4, src: "/abu/Rectangle7.png" },
+    { id: 1, src: "/abu/abu.png" },
+
 ]
 
 export default function LzkPage() {
@@ -22,17 +22,17 @@ export default function LzkPage() {
       <section className="relative w-full h-[80vh] flex items-end pb-20">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url(/lzk/2.jpeg)" }}
+          style={{ backgroundImage: "url(/abu/abu.png)" }}
         />
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <h1 className="text-6xl sm:text-8xl font-black tracking-tight drop-shadow-2xl">
-            lzk
+            dj abU
           </h1>
           <p className="mt-2 text-lg text-gray-300 opacity-90">
-            Músico, poeta e articulador cultural do Vale dos Sinos
+            DJ Produtor Cultural e Educador Social.
           </p>
         </div>
       </section>
@@ -40,19 +40,16 @@ export default function LzkPage() {
       {/* ---------------------- DESCRIÇÃO ---------------------- */}
       <section className="max-w-4xl mx-auto py-20 px-6 text-lg text-gray-300 space-y-6 leading-relaxed">
         <p>
-          Lzk é músico e articulador cultural do Vale dos Sinos. A música entrou na minha vida desde novão, 
-          mas foi nas batalhas de rimas que descobri que o microfone podia ser, além de expressão, 
-          ferramenta de identidade e liberdade.
+          Representando ja a mais de 30 anos com o movimento Hip Hop e 20 no elemento DJ, um dos pilares do hip hop, essencial para a pratica da arte e suas vertentes , trabalha como DJ nas casas noturnas de Porto Alegre e Regiao  nas festas e eventos particulares propagando a Cultura Hip Hop/Rap e outros estilos musicais , tem um currículo de grandes shows com diversos nomes de peso da cultura Hip Hop/Rap Brasileira e mundial, fez variadas oficinas com o tema do elemento em instituições do Movimento , leva o Hip Hop como estilo de Vida e continua repassando a mensagem de luta para Todes.
+
         </p>
 
         <p>
-          Desde então, uso o rap como ponte entre minhas vivências, transformando experiência em verso, 
-          sentimento em performance e realidade em arte.
+      Abu/Ewls é DJ, produtor cultural e educador social. Tem uma pesquisa diferenciada que transita em diferentes estilos musicais, estão entre os principais o RAP nacional, a black music e a música brasileira. Discoteca em open format sempre girando nos toca-discos. DJ Abu/Ewls vem se destacando na cena e lançou recentemente um disco autoral de vinil  de 7", onde apresenta feats com 4 diferentes artistas com quem trabalha já há algum tempo no cenário do RAP.
         </p>
 
         <p className="text-2xl font-light italic text-gray-400">
-          “Como sempre gosto de pedir, por favor, que mais uma vez
-Me escutem...”
+          “Rap in concert em minha opinião veio em um momento de união de musicos e seus intrumentos para fazer algo novo e com essencia musical para evolucão de cada pessoa que leva e sente a vibração da musica e o impacto que ela causa no desenvolvimento comportamental do ser humano.”
         </p>
       </section>
 
@@ -116,19 +113,6 @@ Me escutem...”
           </div>
         </div>
       )}
-
-      {/* ---------------------- MAIS TEXTO ---------------------- */}
-      <section className="max-w-4xl mx-auto pt-10 pb-24 px-6 text-lg text-gray-300 space-y-6 leading-relaxed">
-        <p>
-          Minha caminhada é feita de encontros, ruas, palcos e olhares. 
-          A música nunca foi só carreira – sempre foi ferramenta de transformação.
-        </p>
-
-        <p>
-          Hoje continuo criando para manter viva essa conexão 
-          entre a minha história, o meu povo e tudo aquilo que o rap ainda pode construir.
-        </p>
-      </section>
 
       {/* ---------------------- SPOTIFY EMBED ---------------------- */}
       <section className="max-w-4xl mx-auto pb-32 px-6">
