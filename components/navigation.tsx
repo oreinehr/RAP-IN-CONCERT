@@ -7,6 +7,7 @@ export default function Navigation() {
   const navItems = [
     { label: "Sobre", href: "#about" },
     { label: "Video", href: "#video" },
+    { label: "Artistas", href: "#artistas" },
     { label: "Fotos", href: "#gallery" },
   ]
 
@@ -46,7 +47,9 @@ export default function Navigation() {
           {/* Botão desktop */}
           <div className="hidden md:flex flex-shrink-0">
             <a
-              href="#contact"
+              href="https://wa.me/5551994513729"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-white text-black rounded-lg font-semibold text-sm sm:text-base hover:bg-gray-200 transition-colors"
             >
               Entre em Contato
@@ -102,7 +105,9 @@ export default function Navigation() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="https://wa.me/5551994513729"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-2 px-6 py-3 bg-primary text-black rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
               onClick={() => setIsOpen(false)}
             >

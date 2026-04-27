@@ -13,7 +13,9 @@ export default function Footer() {
 
         {/* Botão */}
         <Link
-          href="#contact"
+          href="https://wa.me/5551994513729"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-primary text-black font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-colors"
         >
           Entre em Contato
