@@ -68,8 +68,8 @@ export default function ArtistsSection() {
   if (artists.length === 0) return null
 
   return (
-    <section id="artistas" className="py-16 px-4 md:px-8 bg-background">
-      <div className="max-w-7xl mx-auto">
+    <section id="artistas" className="py-16 bg-background">
+      <div className="site-container">
         <h2
           className="text-4xl md:text-7xl text-white mb-12"
           style={{ fontFamily: '"thunderhouse-pro", sans-serif' }}

@@ -1,8 +1,8 @@
 export default function YoutubeSection() {
   return (
-    <section id="video" className="w-full py-16 px-2 md:px-4">
+    <section id="video" className="w-full py-16">
       {/* Container com a mesma largura das outras seções */}
-      <div className="w-full max-w-8xl mx-auto">
+      <div className="site-container">
         <div
           className="relative w-full bg-black overflow-hidden"
           style={{ paddingBottom: "56.25%" }} // mantém 16:9

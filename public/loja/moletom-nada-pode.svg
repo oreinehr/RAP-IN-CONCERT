@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="MOLETOM NADA PODE">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#ff6b00" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ff6b00" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hatch" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="26" stroke="#ffffff" stroke-opacity="0.05" stroke-width="7"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="#0d0d0d"/>
+  <rect width="800" height="800" fill="url(#hatch)"/>
+  <rect width="800" height="800" fill="url(#glow)"/>
+  <rect x="0.5" y="0.5" width="799" height="799" fill="none" stroke="#333333"/>
+  <text x="400" y="441.8" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="118" font-weight="900" letter-spacing="6" fill="#ffffff" fill-opacity="0.14">NADA PODE</text>
+  <line x1="64" y1="640" x2="180" y2="640" stroke="#ff6b00" stroke-width="4"/>
+  <text x="64" y="700" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="8" fill="#ffffff" fill-opacity="0.55">MOLETOM</text>
+  <text x="64" y="738" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="4" fill="#ffffff" fill-opacity="0.3">RAP IN CONCERT</text>
+</svg>

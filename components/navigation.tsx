@@ -2,31 +2,34 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import CartButton from "@/components/loja/cart-button"
 
 export default function Navigation() {
   const navItems = [
-    { label: "Sobre", href: "#about" },
-    { label: "Video", href: "#video" },
-    { label: "Artistas", href: "#artistas" },
-    { label: "Fotos", href: "#gallery" },
+    { label: "Sobre", href: "/#about" },
+    { label: "Video", href: "/#video" },
+    { label: "Artistas", href: "/#artistas" },
+    { label: "Fotos", href: "/#gallery" },
+    { label: "Loja", href: "/loja" },
   ]
 
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
-      <div className="max-w-8xl mx-auto px-0 md:px-4">
-        <div className="flex items-center justify-between h-16 px-4 md:px-0">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black">
+      <div className="site-container">
+        <div className="flex items-center justify-between h-24">
           
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#">
               <Image
-                src="/RIC.svg"
+                src="/logo-ric.png"
                 alt="Rap in Concert"
-                width={150}
-                height={40}
-                className="object-contain"
+                width={303}
+                height={194}
+                priority
+                className="object-contain h-12 w-auto invert"
               />
             </a>
           </div>
@@ -37,7 +40,7 @@ export default function Navigation() {
               <a
                 key={index}
                 href={item.href}
-                className="text-sm sm:text-base font-semibold text-gray-300 hover:text-white transition-colors"
+                className="text-sm sm:text-base font-light text-gray-300 hover:text-white transition-colors"
               >
                 {item.label}
               </a>
@@ -45,19 +48,21 @@ export default function Navigation() {
           </div>
 
           {/* Botão desktop */}
-          <div className="hidden md:flex flex-shrink-0">
+          <div className="hidden md:flex flex-shrink-0 items-center gap-2">
+            <CartButton />
             <a
               href="https://wa.me/5551994513729"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-white text-black rounded-lg font-semibold text-sm sm:text-base hover:bg-gray-200 transition-colors"
+              className="px-5 py-2.5 rounded-lg border border-white/25 text-white font-light text-sm sm:text-base hover:border-white/60 hover:bg-white/5 transition-colors"
             >
               Entre em Contato
             </a>
           </div>
 
           {/* Botão hambúrguer mobile */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center gap-1">
+            <CartButton />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-300 hover:text-white focus:outline-none"
@@ -92,13 +97,13 @@ export default function Navigation() {
 
       {/* Menu mobile */}
       {isOpen && (
-        <div className="md:hidden backdrop-blur-sm">
+        <div className="md:hidden bg-black">
           <div className="px-4 pt-4 pb-6 space-y-4 flex flex-col items-center">
             {navItems.map((item, index) => (
               <a
                 key={index}
                 href={item.href}
-                className="text-white text-lg font-semibold hover:text-gray-300 transition-colors"
+                className="text-white text-lg font-light hover:text-gray-300 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
@@ -108,7 +113,7 @@ export default function Navigation() {
               href="https://wa.me/5551994513729"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 px-6 py-3 bg-primary text-black rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
+              className="mt-2 px-5 py-2.5 rounded-lg border border-white/25 text-white font-light hover:border-white/60 hover:bg-white/5 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Entre em Contato

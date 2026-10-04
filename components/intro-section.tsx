@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function IntroSection() {
   return (
-    <section id="about" className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
-      <div className="rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+    <section id="about" className="site-container py-16">
+      <div className="rounded-lg py-8 md:py-12 flex flex-col md:flex-row items-center gap-8">
         {/* Conteúdo de texto */}
         <div className="flex-1">
           <h1 className="text-4xl md:text-7xl font-black text-foreground mb-2 text-balance">
             é ritmo, mas também é poesia...
           </h1>
-          <p className="text-lg font-semibold text-white text-muted-foreground leading-relaxed max-w-3xl mb-5">
+          <p className="text-lg font-normal text-white leading-relaxed max-w-3xl mb-5">
             O Rap in Concert é um espetáculo cultural inovador que celebra a cultura hip‑hop e o rap com uma proposta única: unir ritmo, poesia e performance ao vivo em um formato artístico impactante. Idealizado para levar a energia das ruas às estruturas tradicionais de palco, o projeto transforma versos e batidas em uma experiência sonora e visual envolvente, mostrando o rap como expressão artística e forma de conexão social.
           </p>
           <p className="text-sm text-white leading-relaxed max-w-3xl">

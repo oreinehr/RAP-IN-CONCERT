@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="relative w-full h-screen bg-black overflow-hidden pt-16">
+    <div className="relative w-full h-screen bg-black overflow-hidden pt-24">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-100"

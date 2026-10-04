@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-12 px-4 md:px-8">
+    <footer className="bg-black text-white py-12">
       {/* Container alinhado com o site */}
-      <div className="max-w-8xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="site-container flex flex-col md:flex-row items-center justify-between gap-6">
         
         {/* Texto */}
         <h1 className="text-2xl md:text-6xl font-extrabold tracking-tight">
@@ -16,7 +16,7 @@ export default function Footer() {
           href="https://wa.me/5551994513729"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-primary text-black font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-colors"
+          className="px-5 py-2.5 rounded-lg border border-white/25 text-white font-normal hover:border-white/60 hover:bg-white/5 transition-colors"
         >
           Entre em Contato
         </Link>

@@ -9,7 +9,7 @@ function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm  border-b border-gray-800">
       <div className="max-w-8xl mx-auto px-4 md:px-6 flex items-center justify-between h-16">
         <a href="/" className="flex items-center">
-          <Image src="/RIC.svg" width={150} height={40} alt="Rap in Concert" className="object-contain" />
+          <Image src="/logo-ric.png" width={303} height={194} alt="Rap in Concert" className="object-contain h-12 w-auto invert" />
         </a>
         <nav className="hidden md:flex space-x-8">
           <a href="#artistas" className="text-gray-300 hover:text-white font-semibold transition-colors">Artistas</a>

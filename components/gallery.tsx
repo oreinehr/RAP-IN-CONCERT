@@ -25,8 +25,8 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
   return (
-    <section id="gallery" className="relative w-full bg-background py-20 px-4 overflow-hidden">
-      <div className="max-w-8xl mx-auto relative">
+    <section id="gallery" className="relative w-full bg-background py-20 overflow-hidden">
+      <div className="site-container relative">
       
 
         {/* ✅ Masonry layout sem gaps */}
