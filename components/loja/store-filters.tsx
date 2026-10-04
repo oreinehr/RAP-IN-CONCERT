@@ -7,12 +7,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { catalogFilters } from "@/lib/loja/products"
 import { priceRanges, sortOptions } from "@/lib/loja/filters"
 import type { CatalogFilterId, PriceRangeId, SortId } from "@/lib/loja/types"
 import { cn } from "@/lib/utils"
 
 type StoreFiltersProps = {
+  filters: { id: CatalogFilterId; label: string }[]
   filter: CatalogFilterId
   onFilterChange: (filter: CatalogFilterId) => void
   priceRange: PriceRangeId
@@ -26,6 +26,7 @@ const selectClass =
   "h-10 w-full rounded-lg border-border bg-transparent text-sm text-gray-300 hover:text-white sm:w-[190px]"
 
 export default function StoreFilters({
+  filters,
   filter,
   onFilterChange,
   priceRange,
@@ -43,7 +44,7 @@ export default function StoreFilters({
           aria-label="Categorias de produtos"
           className="flex w-max gap-2"
         >
-          {catalogFilters.map((item) => {
+          {filters.map((item) => {
             const active = item.id === filter
             return (
               <button

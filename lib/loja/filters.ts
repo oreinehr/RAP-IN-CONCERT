@@ -61,7 +61,8 @@ export function filterAndSortProducts(
   )
 
   const sorters: Record<SortId, (a: Product, b: Product) => number> = {
-    relevancia: (a, b) => byAvailability(a, b) || Number(a.id) - Number(b.id),
+    // Mantém a ordem definida no CMS (sort é estável).
+    relevancia: byAvailability,
     "menor-preco": (a, b) => byAvailability(a, b) || a.price - b.price,
     "maior-preco": (a, b) => byAvailability(a, b) || b.price - a.price,
     avaliacao: (a, b) => byAvailability(a, b) || b.rating - a.rating,

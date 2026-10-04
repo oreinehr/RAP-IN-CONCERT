@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { badgeLabels } from "@/lib/loja/products"
+import { badgeLabels } from "@/lib/loja/catalog"
 import {
   discountPercent,
   formatInstallment,

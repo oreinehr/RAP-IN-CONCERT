@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react"
 import { filterAndSortProducts } from "@/lib/loja/filters"
+import { getCatalogFilters } from "@/lib/loja/catalog"
 import type {
   CatalogFilterId,
   PriceRangeId,
@@ -16,6 +17,8 @@ export default function StoreCatalog({ products }: { products: Product[] }) {
   const [priceRange, setPriceRange] = useState<PriceRangeId>("qualquer")
   const [sort, setSort] = useState<SortId>("relevancia")
 
+  const filters = useMemo(() => getCatalogFilters(products), [products])
+
   const visible = useMemo(
     () => filterAndSortProducts(products, { filter, priceRange, sort }),
     [products, filter, priceRange, sort],
@@ -24,6 +27,7 @@ export default function StoreCatalog({ products }: { products: Product[] }) {
   return (
     <>
       <StoreFilters
+        filters={filters}
         filter={filter}
         onFilterChange={setFilter}
         priceRange={priceRange}

@@ -1,9 +1,9 @@
 /**
  * Tipos da loja.
  *
- * A camada de dados é intencionalmente separada da UI: hoje os produtos vêm de
- * `lib/loja/products.ts` (mock), mas qualquer fonte (API, CMS, Shopify, Mongo)
- * só precisa devolver objetos neste formato para a loja continuar funcionando.
+ * A camada de dados é separada da UI: os produtos vêm do Supabase via
+ * `lib/loja/products.ts` (cadastrados no CMS em /admin/produtos) e são
+ * convertidos para este formato antes de chegar aos componentes.
  */
 
 export type ProductCategoryId = "camisetas" | "acessorios" | "kits"
